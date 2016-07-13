@@ -35,7 +35,7 @@ RUN curl -fsSL https://github.com/krallin/tini/releases/download/v${TINI_VERSION
 COPY init.groovy /usr/share/jenkins/ref/init.groovy.d/tcp-slave-agent-port.groovy
 
 ARG JENKINS_VERSION
-ENV JENKINS_VERSION ${JENKINS_VERSION:-2.7.1}
+ENV JENKINS_VERSION ${JENKINS_VERSION:-2.1}
 ARG JENKINS_SHA
 ENV JENKINS_SHA ${JENKINS_SHA:-12d820574c8f586f7d441986dd53bcfe72b95453}
 
